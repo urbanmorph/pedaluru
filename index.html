@@ -31,52 +31,92 @@
       }
     </style>
     <style>
-      #footer-body {
-        background-color: #1a202c;
-        color: #f7fafc;
-        border-top-width: 3px;
-        border-top-color: #38a169;
-        padding: 34px 20px;
-        padding-top: 24px;
-        padding-right: 20px;
-        padding-bottom: 0;
-        padding-left: 16px;
-        gap: 24px;
-        margin-top: 20px; 
-      }
-    
-      #footer-body .font-bold {
-        font-weight: 700;
-      }
-    
-      #footer-body .text-lg {
-        font-size: 1.125rem;
-      }
-    
-      #footer-body .text-sm {
-        font-size: 0.875rem;
-      }
-    
-      #footer-body a {
-        text-decoration: none;
-      }
-    
-      #footer-body a.text-b {
-        font-size: 20px;
-      }
-    
-      #footer-body .text-h {
-        font-size: 28px;
-      }
+#footer-body {
+  background-color: #1a202c;
+  color: #f7fafc;
+  border-top-width: 3px;
+  border-top-color: #38a169;
+  padding: 50px 20px; 
+  gap: 24px;
+  margin-top: 20px;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
 
-      #footer-body .list-inline-item {
-        margin-right: 20px; /* Adjust this value to your preference */
-      }
-      footer {
-        position: absolute;
-        /*bottom: 0; */
-        width: 100%;
-      }
+#footer-body .font-bold {
+  font-weight: 700;
+}
+
+#footer-body .text-lg {
+  font-size: 1.125rem;
+}
+
+#footer-body .text-sm {
+  font-size: 0.875rem;
+}
+
+#footer-body a {
+  text-decoration: none;
+}
+
+#footer-body a.text-b {
+  font-size: 20px;
+}
+
+#footer-body .text-h {
+  font-size: 28px;
+}
+
+#footer-body .list-inline-item {
+  margin-right: 20px;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  
+}
+
+
+.custom-card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  border: 2px solid #e7e5e5; 
+}
+
+.custom-card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.custom-card .card-title {
+  color: #0a5e1f; 
+}
+
+.custom-card .card-list {
+  padding-left: 20px;
+}
+
+.custom-card .card-list li {
+  font-size: 18px; 
+  color: #555;
+  margin-bottom: 5px; 
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.header-container h4 a {
+    text-decoration: none;
+    color: rgb(211, 176, 63);
+  }
+
+  /* New CSS style to change h4 text color to yellow */
+  .custom-card h4 {
+    color: rgb(214, 194, 12);
+  }
 
     </style>
     
@@ -141,9 +181,9 @@
 
         <div class="container">
           <div class="carousel-caption">
-            <h1>Another example headline.</h1>
+            <h4>Another example headline.</h4>
             <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            <p><a class="btn btn-lg btn-primary" href="https://forms.gle/XMR6AeUoeeGLYPrk9">RSVP Form</a></p>
           </div>
         </div>
       </div>
@@ -206,16 +246,47 @@
 
     <hr class="featurette-divider">
 
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+    <div class="row featurette d-flex">
+      <div class="col-md-6">
+          <div class="custom-card p-4 d-flex flex-column justify-content-between" style="height: 100%;">
+              <h4>World Bicycle Day</h4>
+              <hr class="text-gray-700">
+              <div class="card-body">
+                  <p>Established by the United Nations, highlights the significant advantages of cycling for individuals, communities, and the environment. This global recognition by the UN underscores the positive impact of cycling worldwide.</p>
+                  <ul class="card-list">
+                      <li>Promotion of Health</li>
+                      <li>Environmentally Friendly</li>
+                      <li>Affordable and Accessible Transport</li>
+                      <li>Promotion of Sustainable Development Goals (SDGs)</li>
+                      <li>Community Building</li>
+                      <li>Improvement of Urban Mobility</li>
+                      <li>Advocacy for Road Safety</li>
+                  </ul>
+              </div>
+              <hr class="text-gray-700">
+              <div class="card-footer">
+                  <small class="text-body-secondary">Last updated </small>
+              </div>
+          </div>
       </div>
-      <div class="col-md-5">
-        <img src="/home/nivya/Downloads/bootstrap-5.0.2-examples/carousel/static/image/PM.jpeg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="Placeholder: 500x500">
+      <div class="col-md-6">
+          <div class="custom-card p-4 d-flex flex-column justify-content-between" style="height: 100%;">
+              <h4>About Pedaluru</h4>
+              <hr class="text-gray-700">
+              <div class="card-body">
+                  <p>Pedaluru is an annual cycling initiative held in Bengaluru on World Bicycle Day. This event aims to promote health and sustainability by encouraging the community to embrace cycling.</p>
+                  <p>Pedaluru celebrates the joy of riding and advocates for active mobility in the city. It highlights the benefits of cycling for individuals and the environment, emphasizing the importance of green transportation.</p>
+                  <p>Experience the city from a new perspective and enjoy the freedom of cycling while supporting a sustainable urban lifestyle.</p>
+                  <p>Join us for Pedaluru as we pedal towards a greener and healthier Bengaluru!</p>    
+              </div>
+              <hr class="text-gray-700">
+              <div class="card-footer">
+                  <small class="text-body-secondary">Last updated </small>
+              </div>
+          </div>
       </div>
-    </div>
-    
+  </div>
+  
 
     <hr class="featurette-divider">
 
@@ -249,62 +320,45 @@
 
   </div><!-- /.container -->
 
-
-  <!-- FOOTER -->
   <footer class="bg-gray-900 text-white border-t-2 md:border-t-4 border-altmo-green-100 py-6 px-4 space-y-6 md:px-5 xl:px-28" id="footer-body">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8 h-100 text-left text-lg-left my-auto mb-2">
-          <div class="text-white text-lg md:text-xl font-bold leading-8 tracking-tight text-h">
-            CFAM
-          </div>
-          <ul class="list-inline mt-2">
-            <li class="list-inline-item">
-              <div class="inline-flex items-center space-x-2">
-                <img style="height: 38px; width: 38px;" src="static/image/cfam (1).png">
-                <a target="_blank" class="text-white text-sm md:text-base font-medium capitalize text-b" href="https://www.urbanmorph.com">Council for Active Mobility</a>  
-              </div>
-            </li>
-          </ul>
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6 h-100 text-center"> 
+                <ul class="list-inline">
+                    <li class="list-inline-item mx-3">
+                        <a target="_blank" href="#">
+                            <img style="height: 38px; width: 38px;" src="static/image/x-twitter.svg" alt="Twitter">
+                        </a>
+                    </li>
+                    <li class="list-inline-item mx-3">
+                        <a target="_blank" href="https://www.linkedin.com/company/pedaluru/">
+                            <img style="height: 38px; width: 38px;" src="static/image/linkedin-in.svg" alt="LinkedIn">
+                        </a>
+                    </li>
+                    <li class="list-inline-item mx-3">
+                      <a href="mailto:pedaluru@gmail.com" target="_blank">
+                          <img style="height: 42px; width: 42px;" src="static/image/envelope-regular.svg" alt="Email">
+                      </a>
+                  </li>
+                  
+                    <li class="list-inline-item mx-3">
+                        <a target="_blank" href="https://chat.whatsapp.com/HQyCEnQ0m74BOl2BPLoxM0">
+                            <img style="height: 42px; width: 42px;" src="static/image/whatsapp.svg" alt="whatsapp">
+                        </a>
+                    </li>
+                    <li class="list-inline-item mx-3">
+                        <a target="_blank" href="#">
+                            <img style="height: 42px; width: 42px;" src="static/image/instagram.svg" alt="instagram">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3"></div> 
         </div>
-        <div class="col-lg-4 h-100 text-right text-lg-right my-auto">
-          <div class="text-white text-lg md:text-xl leading-8 font-bold mb-2 text-h">
-            Socials
-          </div>
-  
-          <ul class="list-inline mt-2">
-            <li class="list-inline-item mr-3">
-              <!-- Twitter -->
-              <div class="inline-flex items-center space-x-2">
-                <img style="height: 40px; width: 40px;" src="static/image/twitter_logo.svg">
-                <!--<a target="_blank" class="text-white text-sm md:text-base font-medium capitalize" href="https://twitter.com/altmoapp">Twitter</a> --> 
-                <a target="_blank" class="text-white text-sm md:text-base font-medium capitalize text-b" href="@pedaluru https://twitter.com/home">Twitter</a>
-      
-              </div>
-            </li>
-            <li class="list-inline-item mr-3">
-              <!-- Telegram -->
-              <div class="inline-flex items-center space-x-2">
-                <div>
-                  <img style="height: 38px; width: 38px; border-radius: 20%;" src="static/image/th (2).jpeg">
-                  <a target="_blank" class="text-white text-sm md:text-base font-medium capitalize text-b" href="">LinkedIn</a>
-                </div>
-              </div>
-            </li>
-            <li class="list-inline-item">
-              <!-- Email -->
-              <div class="inline-flex items-center space-x-2">
-                <div>
-                  <img style="height: 42px; width: 42px; border-radius: 50%;" src="static/image/email_icon.svg">
-                  <a class="text-white text-sm md:text-base font-medium capitalize text-b" href="pedaluru@gmail.com">Email</a>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
     </div>
-  </footer>
+</footer>
+
   
 </main>
 
